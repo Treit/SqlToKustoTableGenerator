@@ -57,7 +57,7 @@ for (int i = 0; i < reader.FieldCount; i++)
         "varchar" or "nvarchar" or "char" => "string",
         "smalldatetime" or "datetime" or "date" => "datetime",
         "time" => "timespan",
-        "binary" => "dynamic",
+        "binary" or "xml" => "dynamic",
         _ => "unknown"
     };
 
